@@ -1,0 +1,23 @@
+# VIM
+*.swp
+*.swo
+*.vimrc
+*~
+
+# Python
+*.pyc
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+ ._*
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Files
+.apdisk
