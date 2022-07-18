@@ -1,1 +1,1 @@
-**docker-installer** is a basci docker installer.
+**docker-installer**
