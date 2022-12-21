@@ -4,7 +4,7 @@
 
 sudo apt update -y && sudo apt autoremove -y && sudo apt autoclean -y
 
-sudo apt-get install \
+sudo apt install \
     ca-certificates \
     curl \
     gnupg \
@@ -18,4 +18,4 @@ echo \
 
 sudo apt update
 
-sudo apt install -y docker-ce docker-ce-cli containerd.io
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose
