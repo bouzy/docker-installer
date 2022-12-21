@@ -4,11 +4,7 @@
 
 sudo apt update -y && sudo apt autoremove -y && sudo apt autoclean -y
 
-sudo apt install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
+sudo apt install -y ca-certificates curl gnupg lsb-release
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
