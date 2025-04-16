@@ -39,6 +39,7 @@ portainer_agent_installer(){
 portainer_agent_update(){
   sudo docker stop portainer_agent
   sudo docker rm portainer_agent
+  sudo docker rmi portainer/agent
 
   sudo docker run -d \
     -p 9001:9001 \
