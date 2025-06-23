@@ -50,7 +50,36 @@ portainer_agent_update(){
     portainer/agent:latest
 }
 
-# docker_installer
-# portainer_installer
-# portainer_agent_installer
-# portainer_agent_update
+help(){
+  echo "Options:"
+  echo "help                        Show this help message"
+  echo "install-docker              Install the complete docker package"
+  echo "install-portainer           Install the portainer pacakge"
+  echo "install-portainer-agent     Install the portainer agent"
+  echo "update-portainer-agent      Update the portainer agent"
+}
+
+call_switch(){
+  case "$1" in
+    help)
+      help
+      ;;
+    install-docker)
+      docker_installer
+      ;;
+    install-portainer)
+      portainer_installer
+      ;;
+    install-portainer-agent)
+      portainer_agent_installer
+      ;;
+    update-portainer-agent)
+      portainer_agent_update
+      ;;
+    *)
+      break
+      ;;
+  esac
+}
+
+call_switch "$1"
